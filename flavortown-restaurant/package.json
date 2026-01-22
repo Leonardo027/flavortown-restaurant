@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
   "dev": "next dev",
-  "build": "next build --no-lint", 
+  "build": "next build --no-lint --no-mangling", 
   "start": "next start",
   "lint": "next lint"
-  },
+},
   "dependencies": {
     "@supabase/supabase-js": "^2.91.0",
     "next": "16.1.4",
