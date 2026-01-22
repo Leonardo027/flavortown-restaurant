@@ -1,4 +1,5 @@
 import { supabase } from '../lib/supabase';
+import { Header } from '@/components/Header';
 
 // Essa função roda no Servidor (Server Component) antes da página ir pro navegador
 
@@ -14,6 +15,7 @@ export default async function Home() {
     <main className="min-h-screen p-8 bg-gray-50">
       <h1 className="text3x1 font-bold mb-6 text-center text-gray-800">Flavortown Menu</h1>
 
+      <Header />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {products?.map((product) => (
           <div key={product.id} className="bg-white p-4 rounded-lg shadow-md hover:shadow-x1 transition">
